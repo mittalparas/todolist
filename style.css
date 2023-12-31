@@ -90,3 +90,22 @@ ul li.checked {
 ul li.checked::before {
     background-image: url(/images/checked.jfif);
 }
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: rgb(75, 75, 75);
+    line-height: 40px;
+    text-align: center;
+    transition: background-color 0.3s;
+    border-radius: 20% 0% 0% 20%;
+}
+
+ul li span:hover {
+    color: white;
+    background-color: rgb(67, 64, 64);
+}
