@@ -64,4 +64,29 @@ ul li{
     padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border: 2px solid black;
+    border-color: black;
+    border-radius: 50%;
+    background-image: url(/images/checklist.jfif);
+    background-size: cover;
+    background-position: center;
+    left: 10px;
+    top: 12px;
+}
+
+ul li.checked {
+    color: rgb(75, 75, 75);
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(/images/checklist.jfif);
 }
