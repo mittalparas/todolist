@@ -88,5 +88,5 @@ ul li.checked {
 }
 
 ul li.checked::before {
-    background-image: url(/images/checklist.jfif);
+    background-image: url(/images/checked.jfif);
 }
